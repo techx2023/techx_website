@@ -1,0 +1,26 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block body %}
+
+<main id="main">
+    {% block breadcrumb %}
+    <div class="breadcrumb p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                  <div class="text-center">
+                    <h3>Nos réalisations<span class="point">.</span></h3>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock breadcrumb%} 
+    <!-- ======= Réalisation Section ======= -->
+    <div class="container p-5">
+        <h6>Vous aurez le contenu très bientôt. Retournez à l'accueil en cliquant <a href="{% url 'home' %}">ici</a></h6>
+    </div>
+</main>
+
+{% endblock%}

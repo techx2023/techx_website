@@ -1,0 +1,246 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block body %}
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+    <div class="vecteur_header">
+      <img src="{% static 'assets/img/Bandes oranges.svg'%}" alt="" class="img-fluid d-bandes-mobile">
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 col-md-6 hero-text d-flex flex-column justify-content-center pt-4 pt-lg-0 " data-aos="fade-up" data-aos-delay="200">
+          <h1 class="text-justify"><span>La meilleure agence</span> pour la réalisation de vos projets</h1>
+        </div>
+        <div class="col-lg-5 col-md-6 r-lg-1 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <img src="{% static 'assets/img/hero-img.png'%}" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+  <div class="vecteur">
+    <img src="{% static 'assets/img/Bandes oranges.svg'%}" alt="" class="img-fluid d-bandes-mobile">
+  </div>
+
+  <main id="main">
+
+    <!-- ======= Cliens Section 
+    <section id="cliens" class="cliens ">
+      <div class="container">
+
+        <div class="row" data-aos="zoom-in">
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+          </div>
+
+        </div>
+
+      </div>
+    </section>End Cliens Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+        <div class="text-center">
+          <h2>SERVICES<span class="point">.</span></h2>
+        </div>
+        <div class="row my-5">
+          <div class="col-xl-3 col-sm-6 col-md-6  d-flex align-items-stretch mb-3" data-aos="zoom-in" data-aos-delay="100">
+            <a href="">
+              <div class="card">
+                <div class="card-body">
+                  <h6 class="card-title"><img src="{% static 'assets/img/dev web.svg'%}" alt=""></h6>
+                  <h5></h5>
+                  <p>Conception et développement de sites web personnalisés</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-3 col-sm-6 col-md-6  d-flex align-items-stretch mb-3" data-aos="zoom-in" data-aos-delay="100">
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-title"><img src="{% static 'assets/img/dev mobile.svg' %}" alt=""></h6>
+                <h5>Développemnt Mobile</h5>
+                <p>Conception et développement d'applications mobiles natives</p>
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 col-md-6  d-flex align-items-stretch mb-3" data-aos="zoom-in" data-aos-delay="100">
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-title"><img src="{% static 'assets/img/ui_ux.svg' %}" alt=""></h6>
+                <h5>Design UI/UX</h5>
+                <p>Réalisation de vos maquettes et prototypes de vos idées d'applications web ou mobile</p>
+              </div>
+             
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 col-md-6  d-flex align-items-stretch mb-3" data-aos="zoom-in" data-aos-delay="100">
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-title"><img src="{% static 'assets/img/redac web.svg' %}" alt=""></h6>
+                <h5>Rédaction Web</h5>
+                <p>Booster le potentiel de vos site web avec un contenu optimisé.</p>
+              </div>
+             
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 col-md-6  d-flex align-items-stretch mb-3" data-aos="zoom-in" data-aos-delay="100">
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-title"><img src="{% static 'assets/img/Design graphique.svg' %}" alt=""></h6>
+                <h5>Design Graphique</h5>
+                <p>Logo, illustration icônes, flyers et bronchures pour un branding de qualité</p>
+              </div>
+              
+            </div>
+          </div>
+          
+          <div class="col-xl-3 col-sm-6 col-md-6  d-flex align-items-stretch mb-3" data-aos="zoom-in" data-aos-delay="100">
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-title"><img src="{% static 'assets/img/SEO.svg' %}" alt=""></h6>
+                <h5>Référencement SEO</h5>
+                <p>Placez-vous dans le top des moteurs de recherches avec un référencement de qualité. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 col-md-6  d-flex align-items-stretch mb-3" data-aos="zoom-in" data-aos-delay="100">
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-title"><img src="{% static 'assets/img/montage video.svg' %}" alt=""></h6>
+                <h5>Audits</h5>
+                <p>Agencements, transitions et autres effets pour des vidéos de qualité professionnelles</p>
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 col-md-6  d-flex align-items-stretch mb-3" data-aos="zoom-in" data-aos-delay="100">
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-title"><img src="{% static 'assets/img/retouche image.svg' %}" alt=""></h6>
+                <h5>DevOps</h5>
+                <p>Retouche de photos, d'images de produits et documents écrits</p>
+              </div>
+             
+            </div>
+          </div>
+          </div>
+        </div>
+        
+
+      </div>
+    </section>
+    <!-- End Services Section -->
+
+    <!-- ======= Technologies Section ======= -->
+    <section id="technologies" class="">
+      <div class="text-center mb-5">
+        <h2>TECHNOLOGIES<span class="point">.</span></h2>
+      </div>
+      <div class="" data-aos="zoom-in">
+        <img src="{% static 'assets/img/technos.jpg'%}" alt="technologies images" class="img-fluid d-web">
+        <img src="{% static 'assets/img/Techs.svg'%}" alt="technologies images" class="img-fluid d-mobile">
+      </div>
+    </section><!-- End Technologies Section -->
+
+    <!-- Tout savoir sur nous Section -->
+    <section class="about_us">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6">
+            <h2>Tout savoir sur TECHX</h2>
+            <p>
+              Nous sommes une agence spécialisée dans la conception de solutions web et mobiles
+              inovantes. Nos experts font une sélection de technologies adéquates pour la réalisation
+               de vos idées.
+            </p>
+            <div class="">
+            <li><img src="{% static 'assets/img/checkmark.svg'%}" alt="" class=""> <span class="mx-4">Service de qualité</span></li>
+            <li><img src="{% static 'assets/img/checkmark.svg'%}" alt="" class="my-3"> <span class="mx-4">Equipe d'expert</span></li>
+            <li><img src="{% static 'assets/img/checkmark.svg'%}" alt="" class=""> <span class="mx-4">Implication dans le travail</span></li>
+            </div>
+            <div id="Idee" class="my-2">
+              <a href="apropos.html" class="btn btn-primary w-mobile my-4">En savoir plus</a>
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <img class="img-fluid" src="{% static 'assets/img/group-multinational-busy-people-working-office.png'%}" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="vecteur_cta">
+        <img src="{% static 'assets/img/Bandes oranges.svg'%}" alt="" class="img-fluid d-bandes-mobile">
+      </div>
+      <div class="container" data-aos="zoom-in">
+        <div class="row">
+          <div class="col-lg-1"></div>
+          <div class="col-lg-6 text-center text-lg-start">
+            <h4 class="text-white"> Êtes-vous fin prêt à vous lancez avec notre agence ? N'hésiter plus ! </h4>
+          </div>
+          <div class="col-lg-5 cta-btn-container text-center">
+            <p class="text-justify">Vous êtes un entrepreneur indépendant ? Une petite entreprise?
+              Une start-up avec des idées ? Conﬁez-nous la réalisation de vos
+              projets. Avec une équipe d’expert en solutions numériques et
+              visuelles, nous sommes parés à répondre à toutes vos attentes.<br>
+              <a href="" class="mt-5 btn btn-cta">Envoyez-nous un message</a></p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+    <!-- Tout savoir sur nous Section -->
+    <section class="about_us">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="mb-5">NOS VALEURS<span style="color: #cc8f3b;">.</span></h2>
+        </div>
+        <div class="row">
+          <div class="col-xl-3 col-md-6 mb-5">
+            <img class="img-fluid" src="{% static 'assets/img/Groupe 63.png'%}" alt="">
+            
+          </div>
+          <div class="col-xl-3 col-md-6 mb-5">
+            <img class="img-fluid" src="{% static 'assets/img/Groupe 62.png'%}" alt="">
+          </div>
+          <div class="col-xl-3 col-md-6 mb-5">
+            <img class="img-fluid" src="{% static 'assets/img/Groupe 61.png'%}" alt="">
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <img class="img-fluid" src="{% static 'assets/img/Groupe 60.png'%}" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+{% endblock %}

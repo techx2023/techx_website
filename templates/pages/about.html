@@ -1,0 +1,155 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block body %}
+
+<main id="main">
+    {% block breadcrumb %}
+    <div class="breadcrumb p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                  <div class="text-center">
+                    <h3>Nos réalisations<span class="point">.</span></h3>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock breadcrumb%} 
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="text-center titre m-5">
+            <h2>QUI SOMMES-NOUS?<span class="point">.</span></h2>
+          </div>
+  
+          <div class="row content">
+            <div class="col-lg-6">
+              <p class="text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua.
+              </p>
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0">
+              <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+  
+        </div>
+      </section><!-- End About Us Section -->
+      <section id="team" class="team">
+        <div class="container" data-aos="fade-up">
+  
+            <div class="text-center titre m-5">
+              <h2>NÔTRE EQUIPE<span class="point">.</span></h2>
+            </div>
+  
+            <div class="row">
+  
+            <div class="col-lg-6">
+                <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+                <div class="pic"><img src="{% static 'assets/img/team/team-1.jpg' %}" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                    <h4>Walter White</h4>
+                    <span>Chief Executive Officer</span>
+                    <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                    <div class="social">
+                    <a href=""><i class="ri-twitter-fill"></i></a>
+                    <a href=""><i class="ri-facebook-fill"></i></a>
+                    <a href=""><i class="ri-instagram-fill"></i></a>
+                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+  
+            <div class="col-lg-6 mt-4 mt-lg-0">
+                <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
+                <div class="pic"><img src="{% static 'assets/img/team/team-2.jpg' %}" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                    <h4>Sarah Jhonson</h4>
+                    <span>Product Manager</span>
+                    <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                    <div class="social">
+                    <a href=""><i class="ri-twitter-fill"></i></a>
+                    <a href=""><i class="ri-facebook-fill"></i></a>
+                    <a href=""><i class="ri-instagram-fill"></i></a>
+                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+  
+            <div class="col-lg-6 mt-4">
+                <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
+                <div class="pic"><img src="{% static 'assets/img/team/team-3.jpg' %}" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                    <h4>William Anderson</h4>
+                    <span>CTO</span>
+                    <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                    <div class="social">
+                    <a href=""><i class="ri-twitter-fill"></i></a>
+                    <a href=""><i class="ri-facebook-fill"></i></a>
+                    <a href=""><i class="ri-instagram-fill"></i></a>
+                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+  
+            <div class="col-lg-6 mt-4">
+                <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
+                <div class="pic"><img src="{% static 'assets/img/team/team-4.jpg' %}" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                    <h4>Amanda Jepson</h4>
+                    <span>Accountant</span>
+                    <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                    <div class="social">
+                    <a href=""><i class="ri-twitter-fill"></i></a>
+                    <a href=""><i class="ri-facebook-fill"></i></a>
+                    <a href=""><i class="ri-instagram-fill"></i></a>
+                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+  
+            </div>
+  
+        </div>
+    </section><!-- End Team Section -->
+       <!-- ======= Cta Section ======= -->
+      <section id="cta" class="cta mb-5">
+        <div class="vecteur_cta">
+          <img src="assets/img/Bandes oranges.svg" alt="" class="img-fluid d-bandes-mobile">
+        </div>
+        <div class="container" data-aos="zoom-in">
+          <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-6 text-center text-lg-start">
+              <h4 class="text-white"> Êtes-vous fin prêt à vous lancez avec notre agence ? N'hésiter plus ! </h4>
+            </div>
+            <div class="col-lg-5 cta-btn-container text-center">
+              <p class="text-justify">Vous êtes un entrepreneur indépendant ? Une petite entreprise?
+                Une start-up avec des idées ? Conﬁez-nous la réalisation de vos
+                projets. Avec une équipe d’expert en solutions numériques et
+                visuelles, nous sommes parés à répondre à toutes vos attentes.<br>
+                <a href="" class="mt-5 btn btn-cta">Envoyez-nous un message</a></p>
+                
+                
+            </div>
+          </div>
+  
+        </div>
+      </section><!-- End Cta Section -->
+</main>
+
+{% endblock%}

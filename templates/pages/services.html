@@ -1,0 +1,170 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block body %}
+
+<main id="main">
+    {% block breadcrumb %}
+    <div class="breadcrumb p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                  <div class="text-center">
+                    <h3>Nos Services<span class="point">.</span></h3>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock breadcrumb%} 
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+        <div class="container-fluid" data-aos="fade-up">
+            <div class="row dev my-3">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="">
+                    <h2>Développement</h2>
+                    <h4>Web / Mobile</h4>
+                    <p class="my-4 text-justify">
+                      Quelque soit votre projet, ses contraintes et ses spécificités, 
+                      nos experts sélectionnent avec vous les supports les plus 
+                      adaptés pour la réalisation de ce dernier.
+                      Nous vous apporterons la réponse technique la plus adaptée au 
+                      contexte de votre application et aux technologies déjà maîtrisées par vos équipes.
+                    </p>
+                    <div class="row my-5">
+                      <div class="col-xl-6 col-md-6 col-sm-6 d-flex align-items-stretch mb-3" data-aos="zoom-in" data-aos-delay="100">
+                        <a href="">
+                          <div class="card ">
+                            <div class="card-body">
+                              <h5 class="card-title"><img src="{% static 'assets/img/dev web.svg'%}" alt=""></h5>
+                              <div class="card-text">
+                                <h6>Développement web</h6>
+                                <p class="muted-text">Développement de site web personnalisés</p>
+                              </div>
+                            </div>
+                            
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-xl-6 col-md-6 col-sm-6 d-flex align-items-stretch mb-3" data-aos="zoom-in" data-aos-delay="100">
+                        <a class="" href="">
+                          <div class="card ">
+                            <div class="card-body">
+                              <h5 class="card-title"><img src="{% static 'assets/img/dev mobile.svg'%}" alt=""></h5>
+                              <div class="card-text">
+                                <h6>Développement Mobile</h6>
+                                <p class="muted-text">Conception d'applications mobile natives</p>
+                              </div>
+                            </div>
+                            
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <img src="{% static 'assets/img/dev mobile 1.svg'%}" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="container-fluid"> <hr/></div>
+            <div class="row design-ux my-3">
+              <div class="col-md-6 order-2 order-lg-1">
+                <img src="{% static 'assets/img/ux.jpeg' %}" class="img-fluid" alt="UI/UX">
+              </div>
+              <div class="col-md-6 order-1 order-lg-2">
+                <div class="">
+                  <h2>Design UX/UI</h2>
+                  <p class="my-4 text-justify">
+                    De la définition de l’expérience utilisateur en passant par la réalisation d’interfaces ergonomiques jusqu’à la production de motion design et d’illustrations uniques, l’équipe du Studio rendra votre projet intuitif et révèlera tout son potentiel. 
+                    Parce que votre projet mérite le meilleur, ne laissez rien au hasard !
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid"> <hr/></div>
+            <div class="row redaction-web my-3">
+              <div class="col-md-6 order-1 order-lg-2">
+                <div class="mt-5">
+                  <h2>Rédaction Web</h2>
+                  <p class="my-4 text-justify">
+                    Notre équipe crée du contenu optimisé pour les moteurs de recherche, informatif et engageant pour les visiteurs du site. Nous respectons l'image de marque de l'entreprise et offrons un service flexible adapté à tous les budgets. Nous sommes 
+                    engagés envers la qualité et offrons des résultats concrets et mesurables.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 order-2 order-lg-2">
+                <img src="{% static 'assets/img/redaction.jpeg' %}" class="img-fluid" alt="">
+              </div>
+            </div>
+            <div class="container-fluid"> <hr/></div>
+            <div class="row design-graphique my-3">
+              <div class="col-md-6 order-2 order-lg-1">
+                <img src="{% static 'assets/img/pic_edit.jpeg' %}" class="img-fluid" alt="">
+              </div>
+              <div class="col-md-6 order-1 order-lg-2">
+                <div class="mt-5">
+                  <h2>Désign Graphique</h2>
+                  <p class="my-4 text-justify">
+                    Notre équipe crée du contenu optimisé pour les moteurs de recherche, informatif et engageant pour les visiteurs du site. Nous respectons l'image de marque de l'entreprise et offrons un service flexible adapté à tous les budgets. Nous sommes 
+                    engagés envers la qualité et offrons des résultats concrets et mesurables.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid"> <hr/></div>
+            <div class="row ref seo my-3">
+              <div class="col-md-6">
+                <div class="mt-5">
+                  <h2>Référencement SEO</h2>
+                  <p class="my-4 text-justify">
+                    Notre équipe crée du contenu optimisé pour les moteurs de recherche, informatif et engageant pour les visiteurs du site. Nous respectons l'image de marque de l'entreprise et offrons un service flexible adapté à tous les budgets. Nous sommes 
+                    engagés envers la qualité et offrons des résultats concrets et mesurables.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img src="{% static 'assets/img/seo_ref.jpeg' %}" class="img-fluid" alt="ref seo">
+              </div>
+            </div>
+            <div class="container-fluid"> <hr/></div>
+            <div class="row audit my-3">
+              <div class="col-md-6 order-2 order-lg-1">
+                <img src="{% static 'assets/img/audit.jpeg' %}" class="img-fluid" alt="Audit">
+              </div>
+              <div class="col-md-6 order-1 order-lg-2">
+                <div class="mt-5">
+                  <h2>Audits</h2>
+                  <p class="my-4 text-justify">
+                    Notre entreprise propose des services d'audit professionnels pour aider nos clients à évaluer leur situation financière, fiscale et opérationnelle. Nous fournissons des analyses approfondies, des recommandations et des solutions pour optimiser la performance et la rentabilité de l'entreprise. Notre équipe d'auditeurs expérimentés travaille en étroite collaboration avec les clients pour garantir une compréhension complète de leurs besoins et objectifs
+                  </p>
+                </div>
+              </div>
+              </div>
+              <div class="container-fluid"> <hr/></div>
+              <div class="row devops my-3">
+                <div class="col-md-6">
+                  <div class="mt-5">
+                    <h2>DevOps</h2>
+                    <p class="my-4 text-justify">
+                      Dans une logique d’optimisation, la team DevOps met en place une plateforme d’intégration continue complète pour automatiser la distribution de vos produits.
+                      Analyse de la qualité du code, compilation à la volée, déploiements conteneurisés sur des infrastructures cloud, nos experts font le lien entre la programmation et la production.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <img src="{% static 'assets/img/devops.jpeg'%}" class="img-fluid" alt="ref seo">
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section><!-- End Services Section -->
+
+       
+</main>
+
+{% endblock%}
